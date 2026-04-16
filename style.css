@@ -394,3 +394,51 @@ hr {
         padding-right: 40px; /* Espaço para a seta não encavalar no texto */
     }
 }
+
+/* ==========================================================================
+   Animações de Entrada (Reveal on Scroll)
+   ========================================================================== */
+
+/* Classe base para esconder os elementos inicialmente */
+.escondido {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(40px); /* Move 40px para baixo */
+    transition: all 0.8s ease-out; /* Duração e suavidade da animação */
+}
+
+/* Você pode criar variações para vir da esquerda ou direita */
+.escondido-esquerda {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.escondido-direita {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.escondido-baixo{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+/* Classe que o JavaScript vai adicionar quando o elemento aparecer na tela */
+.mostrar {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0); /* Volta para a posição original */
+}
+
+/* Opcional: Atrasar os cards para entrarem um de cada vez (efeito cascata) */
+.grid-servicos .card-servico:nth-child(2) { transition-delay: 0.2s; }
+.grid-servicos .card-servico:nth-child(3) { transition-delay: 0.4s; }
+.grid-servicos .card-servico:nth-child(4) { transition-delay: 0.1s; }
+.grid-servicos .card-servico:nth-child(5) { transition-delay: 0.3s; }
+.grid-servicos .card-servico:nth-child(6) { transition-delay: 0.5s; }
+
+.grid-diferenciais .card-diferencial:nth-child(2) { transition-delay: 0.2s; }
+.grid-diferenciais .card-diferencial:nth-child(3) { transition-delay: 0.4s; }

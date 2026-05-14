@@ -268,7 +268,6 @@ hr {
     margin-top: 60px;
 }
 
-/* 3. Quem Somos & 6. Contato (Layout 2 colunas genérico) */
 .layout-duas-colunas {
     display: flex;
     align-items: center;
@@ -288,7 +287,6 @@ hr {
     max-width: 500px;
 }
 
-/* 4. Diferenciais */
 .grid-diferenciais {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -306,12 +304,13 @@ hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .card-diferencial .icon-placeholder {
     font-size: 3rem;
     margin-bottom: 15px;
 }
 
-/* 5. FAQ (Sanfona) */
+
 .accordion {
     max-width: 900px;
     margin: 40px auto;
@@ -335,7 +334,7 @@ hr {
 }
 
 .faq-item summary::-webkit-details-marker {
-    display: none; /* Remove seta padrão do navegador */
+    display: none; 
 }
 
 .faq-item summary::after {

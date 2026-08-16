@@ -7,8 +7,8 @@
     --dark-brown: #3E3420;
     --gold: #D0AC69;
     --gold-text-on-dark: #f0dcb0;
-    --whatsapp-green: #15cc15; /* Verde do botão CTA */
-    --whatsapp-hover: #12b312;
+    --whatsapp-green: #25D366; /* Verde do WhatsApp (mais claro) */
+    --whatsapp-hover: #1DA654;
     --btn-submit: #b88d57; /* Dourado/Marrom do botão de enviar */
     --bg-light: #f5f1e8; /* Fundo claro aquecido */
     --text-dark: #2b2418;
@@ -70,21 +70,21 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--gold);
-    color: var(--text-dark);
+    background-color: var(--whatsapp-green);
+    color: var(--text-light);
     padding: 15px 35px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.18s ease, transform 0.12s ease;
     margin: 20px 0;
     border: none;
-    box-shadow: 0 4px 10px rgba(208, 172, 105, 0.4);
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.22);
 }
 
 .btn-whatsapp:hover {
-    background-color: #c99750;
+    background-color: var(--whatsapp-hover);
     transform: scale(1.02);
 }
 

@@ -122,7 +122,7 @@ hr {
 }
 
 .logo img {
-    width: 72px;
+    width: 50%;
     height: auto;
     margin-bottom: 0;
 }
@@ -476,7 +476,7 @@ hr {
     }
 
     .logo img {
-        width: 52px;
+        width: 50%;
     }
 
     .logo-texto strong {
